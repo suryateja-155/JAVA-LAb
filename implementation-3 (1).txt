@@ -1,0 +1,31 @@
+//implementation-3 using flower details for abstraction:
+abstract class Flowers{
+  String flower_name;
+  String flower_colour;
+  String flower_price;
+  String flower_size;
+  String flower_smell;
+  public abstract void flowers_details();//abstract method
+}
+class Rose extends Flowers{
+  public void flowers_details(){//normal method 
+      this.flower_name = "Rose";//using this keyword
+      this.flower_colour = "red";
+      this.flower_price = "20rupees";
+      this.flower_size = "small";
+      this.flower_smell = "rose_smell";
+      System.out.println("FLOWERS_DETAILS");
+      System.out.println("----------------");
+      System.out.println("Flower name is :"+this.flower_name);
+      System.out.println("Flower colour is :"+this.flower_colour);
+      System.out.println("Flower price is :"+this.flower_price);
+      System.out.println("Flower size is :"+this.flower_size);
+      System.out.println("Flower smell is :"+this.flower_smell);
+}
+}
+public class Main {
+    public static void main(String[] args) {
+      Rose r = new Rose();
+      r.flowers_details();
+  }
+}
