@@ -1,0 +1,38 @@
+//implementation-4 using flowers details
+
+abstract class Flowers{
+
+  public abstract void flower_details(String flower_name,
+                                      String flower_colour,
+                                      String flower_price,
+                                      String flower_size,
+                                      String flower_smell);
+                                      //abstract method
+  
+}
+class Lilly extends Flowers{
+  public void flower_details(String flower_name,
+                             String flower_colour,
+                             String flower_price,
+                             String flower_size,
+                             String flower_smell){
+                             //normal method
+                           
+      System.out.println("FLOWERS_DETAILS");
+      System.out.println("---------------");
+      System.out.println("Flower_name : "+flower_name);
+      System.out.println("Flower_name : "+flower_colour);
+      System.out.println("Flower_name : "+flower_price);
+      System.out.println("Flower_name : "+flower_size);
+      System.out.println("Flower_name : "+flower_smell);
+      
+}    
+  
+}
+class Main{
+    public static void main(String[] args){
+      Lilly obj = new Lilly();
+      obj.flower_details("Lilly","White","15rc","Small","Nice");
+      
+    }
+}
