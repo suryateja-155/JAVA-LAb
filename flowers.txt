@@ -1,0 +1,43 @@
+interface Fruit{
+  //public abstract 
+  void fruit_name();
+  void fruit_colour();
+  void fruit_shape();
+  void fruit_price();
+  String fruit_name="Apple";
+  String fruit_colour="Red";
+  String fruit_shape="round";
+  String fruit_price="20rs";
+  
+}
+class Fruit1 implements Fruit{ //implement interface class
+    public void fruit_name(){ //normal method
+        System.out.println("Fruit_details*");
+        System.out.println("---------------");
+        System.out.println("Fruit name : "+fruit_name);
+      
+    
+}
+public void fruit_colour(){ //normal method
+        System.out.println("Fruit_colour is : "+fruit_colour);
+    
+    
+}
+public void fruit_shape(){ //normal method
+        System.out.println("Fruit_shape is : "+fruit_shape);
+}
+public void fruit_price(){ //normal method
+        System.out.println("Fruit_price is : "+fruit_price);
+
+}
+}
+ class Main {//main class 
+    public static void main(String[] args) {
+      Fruit1 c = new Fruit1();
+      c.fruit_name();
+      c.fruit_colour();
+      c.fruit_shape();
+      c.fruit_price();
+    
+  }
+}
